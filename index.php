@@ -9,6 +9,7 @@
 	<title>Document</title>
 </head>
 <body>
+
 	<?php require_once('header.php'); ?>
 	
 </body>
