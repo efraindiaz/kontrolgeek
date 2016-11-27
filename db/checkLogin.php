@@ -17,18 +17,18 @@ $rows = $result->fetchAll();
 
 foreach ($rows as $row){
 
-	if($nombre == $row['nombre'] && $password == $row['password'])
+	if($nombre == $row['nombreUsuario'] && $password == $row['password'])
     {
         $_SESSION['loggedin'] = true;
         $_SESSION['idusuario'] = $row['id'];
-        $_SESSION['nombre'] = $nombre;
+        $_SESSION['nombre'] = $row['nombre'];
 
         echo "Bienvenido! " . $_SESSION['nombre'];
+        header('Location: ../');
 	}
 	else{
         print "Usuario o contraseña incorrectos";
     } 
 }
 $conn = null;
-
 ?>

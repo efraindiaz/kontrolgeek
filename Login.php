@@ -1,5 +1,5 @@
 <!-- MODAL PARA EL INICIO DE SESION-->
-<form class="formLogin">
+
 	<div class="modal fade modalLogin">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
@@ -7,6 +7,7 @@
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <h4 class="modal-title">Iniciar Sesion</h4>
 	      </div>
+	      <form class="formLogin" action="db/checkLogin.php">
 	      <div class="modal-body bodyLogin">
 		      	<div class="form-group">
 			        <label for="NombreU">Nombre</label>
@@ -19,10 +20,11 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-	        <button type="button" name="btnAcepLogin" class="btn btnAcepLogin" data-dismiss="modal">Aceptar</button>
+	        <input type="submit" name="btnAcepLogin" class="btn btnAcepLogin"  value="Aceptar">
 	      </div>
+	      </form>
 	    </div>
 	  </div>
 	</div>
-</form>
+
 <!-- MODAL PARA EL INICIO DE SESION FIIIIIIN-->

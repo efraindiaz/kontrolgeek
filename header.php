@@ -24,15 +24,17 @@ session_start();
         </div>
         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </form>
-      <ul class="nav navbar-nav navbar-right">        
+      <ul class="nav navbar-nav navbar-right">
+      <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {?>
         <li class="dropdown">
           <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">#Nombre <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Perfil</a></li>
             <li role="separator" class="divider"></li>
-            <li><a><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesión</button></a></li>
+            <li><a href="db/logout.php"><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesión</button></a></li>
           </ul>
         </li>
+        <?php } else { ?>
         <li class="dropdown">         
           <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acceso <span class="caret"></span></a>
           <ul class="dropdown-menu">          
@@ -41,6 +43,7 @@ session_start();
             <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalRegistro">Registrarse</button></a></li>
           </ul>
         </li>
+        <?php } ?>
         <li><a style="" class="cart-ico-nav" role="" data-toggle="collapse" href="#collapseCart" aria-expanded="false" aria-controls="collapseExample">
         <span class="glyphicon glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"><span class="badge">42</span>   
       </a></li>         

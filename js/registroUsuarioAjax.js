@@ -13,7 +13,7 @@
 		});
 	});
 
-$('.btnAcepLogin').click(function(){
+/*$('.btnAcepLogin').click(function(){
 	var datos = $('.formLogin').serialize();
 
 	$.ajax({
@@ -25,4 +25,4 @@ $('.btnAcepLogin').click(function(){
 			console.log(resp);
 		}
 	});
-});
+});*/
