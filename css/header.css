@@ -1,13 +1,14 @@
 .navbar-default{
-	background-color: #542682 !important;
+	/*background-color: #542682 !important;*/
+	background-color: white !important;
 	margin-bottom: 0px !important;
 }
 .navbar-default .navbar-nav>li>a{
-	color:white;
+	color:#542682;
 	font-weight: bolder;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color:white;
+	color:#542682;
 	font-weight: bolder;
 }
 .navbar-default .navbar-nav>.open>a{
@@ -15,6 +16,15 @@
 }
 .no-padding-categorias{
 	padding: 0px;
+}
+.cat-opc{
+	height: 50px;
+	padding:0px;
+	background-color: #542682;
+	color:white;
+}
+.cat-opc a{
+	color:white;
 }
 .categorias{
 	width: 100% !important;
@@ -29,12 +39,26 @@
 .categorias a:hover{
 	font-size:;
 }
-.img-banner{
+.img-banner{	
 	width: 100%;
 	height: 100%;
 }
 .div-banner{
-	
-	background-color: red;
-	padding: 0px;
+	background-color: #542682;
+}
+.carousel-indicators .active{
+	background-color: #542682;
+}
+
+/*Carrito*/
+.font-opc-nav{
+	font-size:20px; margin-top:5px;
+}
+.cart-ico-nav{
+	font-size:30px;
+}
+.cart-prod{
+	position:absolute; 
+	z-index:999; 
+	right:.5px;
 }
