@@ -1,0 +1,41 @@
+
+
+.productos{
+	margin-left: 70px;
+
+}
+
+.titulo{
+	margin-left: 65px;
+	margin-bottom: 20px;
+
+}
+
+.pago{
+	margin-left: 70px
+}
+
+.image{
+
+	align-content: center;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+
+}
+
+
+
+.imp{
+	padding-top: 30px;
+}
+
+.btnx{
+	padding-top: 55px;	
+}
+
+.btnc{
+
+	padding-bottom-bottom: 20px;
+	padding-left: 95px;	
+}
