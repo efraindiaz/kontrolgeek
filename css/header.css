@@ -1,5 +1,6 @@
 .navbar-default{
 	background-color: #542682 !important;
+	margin-bottom: 0px !important;
 }
 .navbar-default .navbar-nav>li>a{
 	color:white;
@@ -11,4 +12,29 @@
 }
 .navbar-default .navbar-nav>.open>a{
 	color: #542682 !important;
+}
+.no-padding-categorias{
+	padding: 0px;
+}
+.categorias{
+	width: 100% !important;
+	text-align: center;
+	font-weight: bolder;
+	
+}
+.categorias a{
+	color: #542682;
+	border-radius: 0px !important;
+}
+.categorias a:hover{
+	font-size:;
+}
+.img-banner{
+	width: 100%;
+	height: 100%;
+}
+.div-banner{
+	
+	background-color: red;
+	padding: 0px;
 }

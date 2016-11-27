@@ -11,6 +11,10 @@
 <body>
 
 	<?php require_once('header.php'); ?>
-	
+	<?php require_once('banner.php'); ?>
+	<script>
+		console.log("holamundo");
+		$('.carousel').carousel()
+	</script>
 </body>
 </html>

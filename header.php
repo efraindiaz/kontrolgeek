@@ -43,3 +43,29 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<<<<<<< HEAD
+=======
+<div class="col-md-12 no-padding-categorias">
+  
+    <div class="col-xs-6 col-sm-3 col-md-3 no-padding-categorias">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="categorias"><a href="#">Drones</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-3 no-padding-categorias">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="categorias"><a href="#">Helicopteros</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-3 no-padding-categorias">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="categorias"><a href="#">Carros</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-3 no-padding-categorias">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="categorias"><a href="#">Botes</a></li>
+      </ul>
+    </div>
+</div>
+>>>>>>> 108ff517fdade9771b684a7a45158b2f68e20b68
