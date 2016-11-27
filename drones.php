@@ -12,7 +12,7 @@
 </head>
 <body>
 	<?php require_once('header.php'); ?>
-	<?php require_once('Usuario/Login.php'); ?>
+	<?php require_once('Login.php'); ?>
 
 	<div class="col-md-2 col-md-offset-1 opciones">
 		<div class="btn-group div-inter-filter">
