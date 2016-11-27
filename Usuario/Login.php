@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<script src="../js/jquery.min.js"></script>
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<script src="../js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="../css/header.css">
-	<link rel="stylesheet" href="../css/login.css">
 
-	<title>Iniciar Sesion</title>
-</head>
-<body>
-
-	<?php require_once('../header.php'); ?>
 
 <!-- MODAL PARA EL INICIO DE SESION-->
 	<div class="modal fade modalLogin">
@@ -129,7 +115,3 @@
 	  </div>
 	</div>
 <!-- MODAL PARA EL REGISTRO DE INICIO DE SESION FIIIIIIN-->
-
-
-</body>
-</html> 

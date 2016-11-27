@@ -5,6 +5,8 @@
 	<script src="js/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/login.css">
+
 	<script src="js/bootstrap.min.js"></script>
 	<title>Document</title>
 </head>
@@ -12,6 +14,7 @@
 
 	<?php require_once('header.php'); ?>
 	<?php require_once('banner.php'); ?>
+	<?php require_once('/Usuario/Login.php'); ?>
 	<script>
 		console.log("holamundo");
 		$('.carousel').carousel()
