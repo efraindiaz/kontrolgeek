@@ -22,6 +22,7 @@ $('.btnAcepLogin').click(function(){
 		data: datos,
 		success: function(resp){
 			console.log("Sesion Iniciada");
+			console.log(resp);
 		}
 	});
 });

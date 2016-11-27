@@ -30,6 +30,5 @@ foreach ($rows as $row){
     } 
 }
 $conn = null;
-        header('Location: ../');
 
 ?>
