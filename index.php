@@ -14,8 +14,6 @@
 <body>
 	<?php require_once('header.php'); ?>
 	<?php require_once('banner.php'); ?>
-<<<<<<< HEAD
-	<?php require_once('/Usuario/Login.php'); ?>
 	<div class="row" style="margin:0px;">
 		<div class="col-md-12 col-sm-12 col-xs-12 lista-cat">
 
@@ -53,16 +51,10 @@
 		</div>
 	</div>
 	<?php include 'footer.php'; ?>
-	<script>
-		console.log("holamundo");
-		//$('.carousel').carousel()
-=======
 	<?php require_once('Login.php'); ?>
 	<?php require_once('Registro.php'); ?>
-	
 	<script>
 		$('.carousel').carousel()
->>>>>>> 146e418bd975aa76b1c33f44eba8955af28d2e14
 	</script>
 	<script src="js/registroUsuarioAjax.js"></script>
 	
