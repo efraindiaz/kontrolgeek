@@ -1,33 +1,5 @@
-
-
-<!-- MODAL PARA EL INICIO DE SESION-->
-	<div class="modal fade modalLogin">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header headerLogin">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	        <h4 class="modal-title">Iniciar Sesion</h4>
-	      </div>
-	      <div class="modal-body bodyLogin">
-		      	<div class="form-group">
-			        <label for="NombreU">Nombre</label>
-			        <input type="text" name="NombreU" class="form-control nombreU" placeholder="Nombre Usuario">
-			    </div>
-			    <div class="form-group">
-			        <label for="pass">Contraseña</label>
-			        <input type="text" name="pass" class="form-control password" placeholder="Contraseña">
-			    </div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-	        <button type="button" class="btn btnAcepLogin">Aceptar</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-<!-- MODAL PARA EL INICIO DE SESION FIIIIIIN-->
-
 <!-- MODAL PARA EL REGISTRO DE INICIO DE SESION-->
+<form class="formRegistro">
 	<div class="modal fade modalRegistro">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
@@ -38,8 +10,8 @@
 	      <div class="modal-body bodyRegistro">
 		      	<div class="row">
 			      	<div class="col-xs-6">
-				        <label for="Nombre">Nombre</label>
-				        <input type="text" name="Nombre" class="form-control nombre" placeholder="Nombres">
+				        <label for="nombre">Nombre</label>
+				        <input type="text" name="nombre" class="form-control nombre" placeholder="Nombres">
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="apellido">Apellido</label>
@@ -48,7 +20,7 @@
 			    </div>
 			    <div class="row">
 				    <div class="col-xs-6">
-				        <label for="nombreU">Nombre Usario</label>
+				        <label for="nombreU">Nombre Usuario</label>
 				        <input type="text" name="nombreU" class="form-control nombreU" placeholder="Nombre De Usuario">
 				    </div>
 				    <div class="col-xs-6">
@@ -99,7 +71,7 @@
 			    <div class="row">
 				    <div class="col-xs-6">
 				        <label for="passwordR">Contraseña</label>
-				        <input type="text" name="passwordR" class="form-control passwordR">
+				        <input type="text" name="password" class="form-control passwordR">
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="passwordC">Confirmar Contraseña</label>
@@ -109,9 +81,10 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-	        <button type="button" class="btn btnAcepRegistro">Aceptar</button>
+	        <button type="button" class="btn btnAcepRegistro" data-dismiss="modal">Aceptar</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+</form>
 <!-- MODAL PARA EL REGISTRO DE INICIO DE SESION FIIIIIIN-->

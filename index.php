@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,19 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/login.css">
-
 	<script src="js/bootstrap.min.js"></script>
 	<title>Document</title>
 </head>
 <body>
-
 	<?php require_once('header.php'); ?>
 	<?php require_once('banner.php'); ?>
-	<?php require_once('/Usuario/Login.php'); ?>
+	<?php require_once('Login.php'); ?>
+	<?php require_once('Registro.php'); ?>
+	
 	<script>
-		console.log("holamundo");
 		$('.carousel').carousel()
 	</script>
+	<script src="js/registroUsuarioAjax.js"></script>
+	
 </body>
 </html>
