@@ -25,9 +25,9 @@
         <li class="dropdown">        	
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acceso <span class="caret"></span></a>
           <ul class="dropdown-menu">          
-            <li><a href="#">Iniciar Sesión</a></li>
+            <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalLogin">Iniciar Sesion</button></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Registrarse</a></li>
+            <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalRegistro">Registrarse</button></a></li>
           </ul>
         </li>
         <li class="dropdown">

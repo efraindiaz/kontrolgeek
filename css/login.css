@@ -1,0 +1,19 @@
+.headerLogin,
+.headerRegistro{
+	background-color: #542682;
+	color: white;
+}
+
+.bodyLogin .form-group{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.bodyRegistro .row{
+	margin-bottom: 1%;
+}
+.btnAcepLogin,
+.btnAcepRegistro{
+	background-color: #542682;
+	color: white;
+}
