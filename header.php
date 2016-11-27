@@ -30,13 +30,13 @@ session_start();
           <ul class="dropdown-menu">
             <li><a href="#">Perfil</a></li>
             <li role="separator" class="divider"></li>
-            <li><a><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesion</button></a></li>
+            <li><a><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesión</button></a></li>
           </ul>
         </li>
         <li class="dropdown">         
           <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acceso <span class="caret"></span></a>
           <ul class="dropdown-menu">          
-            <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalLogin">Iniciar Sesion</button></a></li>
+            <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalLogin">Iniciar Sesión</button></a></li>
             <li role="separator" class="divider"></li>
             <li><a><button type="button" class="btn btn-link" data-toggle="modal" data-target=".modalRegistro">Registrarse</button></a></li>
           </ul>
