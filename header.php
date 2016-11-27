@@ -30,7 +30,7 @@ session_start();
           <ul class="dropdown-menu">
             <li><a href="#">Perfil</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Cerrar Sesión</a></li>
+            <li><a><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesion</button></a></li>
           </ul>
         </li>
         <li class="dropdown">         

@@ -1,8 +1,11 @@
+.prodcutos{
+	
+	width: 90%;
 
+}
 
-.productos{
-	margin-left: 70px;
-
+.pago{
+	width: 50%;
 }
 
 .titulo{
@@ -10,32 +13,26 @@
 	margin-bottom: 20px;
 
 }
-
-.pago{
-	margin-left: 70px
-}
-
 .image{
-
-	align-content: center;
 	border-radius: 50%;
-	height: 150px;
 	width: 150px;
-
+	height: 150px;
 }
 
-
-
-.imp{
+.imp{	
 	padding-top: 30px;
+	width: 100%;
 }
 
 .btnx{
+	text-align: center;
 	padding-top: 55px;	
 }
 
 .btnc{
-
 	padding-bottom-bottom: 20px;
 	padding-left: 95px;	
+}
+.der{
+	text-align: right;
 }
