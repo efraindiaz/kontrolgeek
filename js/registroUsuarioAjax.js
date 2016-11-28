@@ -9,8 +9,13 @@
 			data: datos,
 			success: function(resp){
 				console.log("agregado");
-				console.log(resp);
 			}
+		});
+		$('.modalRegistro').on('hidden.bs.modal', function (e) {
+		  $(this)
+		    .find("input")
+		       .val('')
+		       .end();
 		});
 	});
 

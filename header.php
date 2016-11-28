@@ -29,7 +29,7 @@ session_start();
         <li class="dropdown">
           <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo "".$_SESSION['nombre']; ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Perfil</a></li>
+            <li><a href="EditarUsuario.php">Perfil</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="db/logout.php"><button type="button" class="btn btn-link btnCerrarSession">Cerrar Sesión</button></a></li>
           </ul>

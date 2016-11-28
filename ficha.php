@@ -17,7 +17,7 @@
 </head>
 <body>
 <?php require_once('header.php'); ?>
-<?php require_once('/Usuario/Login.php'); ?>
+<?php require_once('Login.php'); ?>
 <div class="container-fluid">
   <h1 class="text-center">Ficha Tecnica</h1>
  
