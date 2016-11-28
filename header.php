@@ -45,7 +45,7 @@ session_start();
         </li>
         <?php } ?>
         <li><a style="" class="cart-ico-nav" role="" data-toggle="collapse" href="#collapseCart" aria-expanded="false" aria-controls="collapseExample">
-        <span class="glyphicon glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"><span class="badge">42</span>   
+        <span class="glyphicon glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"><span class="badge badge-cant-cart">0</span>   
       </a></li>         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -53,6 +53,14 @@ session_start();
 </nav>
 <div class="collapse cart-prod" id="collapseCart">
     <div class="well">
+      <div class="col-md-12" style="background-color:red; height:30px;">
+        
+      </div>
+      <div><a href="" class="">Menor a Mayor</a></div>
+      <div><a href="" class="">Mayor a Menor </a></div>
+      <div><a href="" class="">Aa - zZ</a></div>
+      <div><a href="" class="">Aa - zZ</a></div>
+      <div><a href="" class="">Aa - zZ</a></div>
       <div><a href="" class="">Menor a Mayor</a></div>
       <div><a href="" class="">Mayor a Menor </a></div>
       <div><a href="" class="">Aa - zZ</a></div>

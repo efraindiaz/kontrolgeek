@@ -58,7 +58,18 @@
 	font-size:30px;
 }
 .cart-prod{
+	width: 300px;
 	position:absolute; 
 	z-index:999; 
 	right:.5px;
+}
+.glyphicon-shopping-cart{
+	color:#542682;
+}
+.badge-cant-cart{
+	background-color: red;
+}
+.well{
+	text-align: center;
+	height: 300px;
 }
