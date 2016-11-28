@@ -27,7 +27,7 @@ session_start();
       <ul class="nav navbar-nav navbar-right">
       <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {?>
         <li class="dropdown">
-          <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">#Nombre <span class="caret"></span></a>
+          <a style="" href="#" class="dropdown-toggle font-opc-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo "".$_SESSION['nombre']; ?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Perfil</a></li>
             <li role="separator" class="divider"></li>
