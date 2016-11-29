@@ -53,8 +53,9 @@
 .btn-ver-producto{
 	border:1px solid #542682 !important;
 	color: #542682 !important;
+	background-color: white !important;
 }
 .btn-ver-producto:hover{
-	background-color: #542682;
+	background-color: #542682 !important;
 	color: white !important;
 }

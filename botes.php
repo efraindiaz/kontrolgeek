@@ -8,13 +8,18 @@
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/categorias.css">
 	<script src="js/bootstrap.min.js"></script>
-	<title>Drones</title>
+	<title>Botes</title>
 </head>
 <body>
 	<?php require_once('header.php'); ?>
-	<?php require_once('Usuario/Login.php'); ?>
-
-	<div class="col-md-2 col-md-offset-1 opciones">
+	<?php require_once('Login.php'); ?>
+	<?php require_once('db/conexion.php'); 
+	$conn = dbConexion();	
+	$sql = "SELECT * FROM producto join stock on producto.id = stock.id_producto WHERE categoria = 2 ";
+	$result = $conn->query($sql);
+	$rows = $result->fetchAll();
+	?>
+	<!--div class="col-md-2 col-md-offset-1 opciones">
 		<div class="btn-group div-inter-filter">
 			<a class="opc-filter title-filter-cat btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 				<span class="glyphicon glyphicon glyphicon-filter" aria-hidden="true"></span> Filtrar por</a>
@@ -25,40 +30,27 @@
 		</div>
 		<div class="collapse" id="collapseExample">
   			<div class="well">
-    			...
+    			<div><a href="" class="">Menor a Mayor</a></div>
+    			<div><a href="" class="">Mayor a Menor </a></div>
+    			<div><a href="" class="">Aa - zZ</a></div>
+    			<div><a href="" class="">Aa - zZ</a></div>
+    			<div><a href="" class="">Aa - zZ</a></div>
   			</div>
 		</div>
 		
-	</div>
-	<div class="col-md-8 col-sm-12 lista-cat">
+	</div-->
+	<div class="col-md-8 col-md-offset-2 col-sm-12 lista-cat">
+		<?php foreach ($rows as $row) {	?>
 		<div class="col-md-4 col-sm-6 prod-cate">
 			<div class="col-md-12 prod-detail-prev">
-				<div class="col-md-12"><img class="thum-list" src="../img/320x320.png" alt=""></div>
-				<div class="col-md-12 text-center desc-list">Nombre del Producto kjsdkjds skjjkdd sdjsdjkds kjdsjksjkd</div>
-				<div class="col-md-12 text-center desc-list-precio">$00.00</div>
-				<div class="col-md-12 text-center"><a href="#" class="btn btn-lg btn-block btn-ver-producto" role="button">Ver Artículo</a></div>
+				<div class="col-md-12"><img class="thum-list" src="<?php echo $row['imgPrev']; ?>" alt=""></div>
+				<div class="col-md-12 text-center desc-list"><?php echo  substr($row['nombre'], 0,15)."..."; ?></div>
+				<div class="col-md-12 text-center desc-list-precio">$<?php echo $row['precioVenta']; ?></div>
+				<div class="col-md-12 text-center"><form action="articulo.php" enctype="application/x-www-form-urlencoded"><input type="text" name="sku" value="<?php echo $row['id'];?>" hidden><input type="submit" class="btn btn-lg btn-block btn-ver-producto" value="Ver Producto"></form></div>
+				<!--div class="col-md-12 text-center"><a href="#" class="btn btn-lg btn-block btn-ver-producto" role="button">Ver Artículo</a></div-->
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-6 prod-cate">
-			<div class="col-md-12 prod-detail-prev">
-				<div class="col-md-12 prod-detail-prev">
-					<div class="col-md-12"><img class="thum-list" src="../img/prev01.jpg" alt=""></div>
-				<div class="col-md-12 text-center desc-list">Nombre del Producto kjsdkjds skjjkdd sdjsdjkds kjdsjksjkd</div>
-				<div class="col-md-12 text-center desc-list-precio">$00.00</div>
-				<div class="col-md-12 text-center"><a href="#" class="btn btn-lg btn-block btn-ver-producto" role="button">Ver Artículo</a></div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-6 prod-cate">
-			<div class="col-md-12 prod-detail-prev">
-				
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-6 prod-cate">
-			<div class="col-md-12 prod-detail-prev">
-				
-			</div>
-		</div>
+		<?php } ?>
 	</div>
 	<?php include 'footer.php'; ?>
 	<script>

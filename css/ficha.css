@@ -1,22 +1,28 @@
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: black;
-   
+.div-nom-art{
+  background-color: rgba(128, 128, 128, 0.2);
+  height: 400px; 
 }
-
+.div-img-art{
+  height: 400px;
+}
+.div-img-thumbnail{
+  height: 100px;
+}
 .img-thumbnail{
-
-  border: 3px double #fff;
-  float: left;
-  height: 60%;
-  width: 60%;
-  border: 2px solid #542682;
+  width: 100%;
+}
+.img-prev{
+  width: 100%;
 }
 
-.LetraBlanca {
-	color : rgb(84, 38, 130);
+.nombre-art{
+  color:#542982;
+  font-weight: bolder;
+}
+.precio-art{
+  color: #542982;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .bg-primary {
@@ -25,110 +31,20 @@ body {
 }
 
 .light{     
-    width: 100px;
-    height:100px;
-    background-size: 100% 100%;
-    display: table;  
- 
-  
-  }
-  .display{
-display: table-cell;
-  
-  }
-
-
-@-webkit-keyframes swing
-{
-15%
-{
--webkit-transform: translateX(5px);
-transform: translateX(5px);
+  width: 100px;
+  height:100px;
+  background-size: 100% 100%;
+  display: table;  
 }
-30%
-{
--webkit-transform: translateX(-5px);
-transform: translateX(-5px);
+.display{
+  display: table-cell;
 }
-50%
-{
--webkit-transform: translateX(3px);
-transform: translateX(3px);
+.btn-agregar-producto{
+  border:1px solid #542682 !important;
+  color: #542682 !important;
+  background-color: rgba(128, 128, 128, 0) !important;
 }
-65%
-{
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-}
-80%
-{
--webkit-transform: translateX(2px);
-transform: translateX(2px);
-}
-100%
-{
--webkit-transform: translateX(0);
-transform: translateX(0);
-}
-}
-@keyframes swing
-{
-15%
-{
--webkit-transform: translateX(5px);
-transform: translateX(5px);
-}
-30%
-{
--webkit-transform: translateX(-5px);
-transform: translateX(-5px);
-}
-50%
-{
--webkit-transform: translateX(3px);
-transform: translateX(3px);
-}
-65%
-{
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-}
-80%
-{
--webkit-transform: translateX(2px);
-transform: translateX(2px);
-}
-100%
-{
--webkit-transform: translateX(0);
-transform: translateX(0);
-}
-}
-
-.swing:hover
-{
--webkit-animation: swing 1s ease;
-animation: swing 1s ease;
--webkit-animation-iteration-count: 1;
-animation-iteration-count: 1;
-}
-
-
-
-.shrink:hover
-{
--webkit-transform: scale(0.8);
--ms-transform: scale(0.8);
-transform: scale(0.8);
-}
-
-
-.threed:hover
-{
-box-shadow:
-1px 1px #53a7ea,
-2px 2px #53a7ea,
-3px 3px #53a7ea;
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
+.btn-agregar-producto:hover{
+  background-color: #542682 !important;
+  color: white !important;
 }

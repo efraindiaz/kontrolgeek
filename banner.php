@@ -10,13 +10,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="img/banner.png" alt="..." class="img-banner">
+      <img src="img/drone-banner1-mini1.jpg" alt="..." class="img-banner">
     </div>
     <div class="item">
-      <img src="img/drones.png" alt="..." class="img-banner">
+      <img src="img/drone-banner3.jpg" alt="..." class="img-banner">
     </div>
      <div class="item">
-      <img src="img/botes.png" alt="..." class="img-banner">
+      <img src="img/LP-Footer-RC-BANNER.jpg" alt="..." class="img-banner">
     </div>
   </div>
 </div>
