@@ -12,27 +12,31 @@
 </head>
 <body>
 	<?php require_once('header.php'); ?>
-
 	 <div class="row info">
 	     <div class="col-md-8 col-md-offset-2 rowInfoUsuario"> 
-                <p class="bg-primary text-center">EDITAR USUARIO</p>
-                
+                <div class="titulo">
+                	<h4>Informacion</h4>
+                </div>
+                <form class="formEdit">
+	 			<input type="hidden" name="passwordHidden" class="passwordHidden">
+
+                <div class="col-md-9"> 
 			      	<div class="col-xs-6">
 				        <label for="nombre">Nombre</label>
-				        <input type="text" name="nombre" class="form-control nombre" placeholder="Nombres">
+				        <input type="text" name="nombre" class="form-control nombre" placeholder="Nombres" required>
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="apellido">Apellido</label>
-				        <input type="text" name="apellido" class="form-control apellido" placeholder="Apellidos">
+				        <input type="text" name="apellido" class="form-control apellido" placeholder="Apellidos" required>
 				    </div>
 			    
 				    <div class="col-xs-6">
 				        <label for="nombreU">Nombre Usuario</label>
-				        <input type="text" name="nombreU" class="form-control nombreU" placeholder="Nombre De Usuario">
+				        <input type="text" name="nombreU" class="form-control nombreU" placeholder="Nombre De Usuario" required>
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="email">Email</label>
-				        <input type="text" name="email" class="form-control email" placeholder="Correo Electronico">
+				        <input type="text" name="email" class="form-control email" placeholder="Correo Electronico" required>
 				    </div>
 
 				    <div class="col-xs-6">
@@ -41,51 +45,67 @@
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="ciudad">Ciudad</label>
-				        <input type="text" name="ciudad" class="form-control ciudad" placeholder="Ciudad/Localidad">
+				        <input type="text" name="ciudad" class="form-control ciudad" placeholder="Ciudad/Localidad" required>
 				    </div>
 
 				    <div class="col-xs-6">
 				        <label for="estado">Estado</label>
-				        <input type="text" name="estado" class="form-control estado">
+				        <input type="text" name="estado" class="form-control estado" required>
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="codigop">Codigo Postal</label>
-				        <input type="text" name="codigop" class="form-control codigop">
+				        <input type="text" name="codigop" class="form-control codigop" required>
 				    </div>
 
 				    <div class="col-xs-6">
 				        <label for="colonia">Colonia</label>
-				        <input type="text" name="colonia" class="form-control colonia" placeholder="Region/Colonia">
+				        <input type="text" name="colonia" class="form-control colonia" placeholder="Region/Colonia" required>
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="calle">Calle</label>
-				        <input type="text" name="calle" class="form-control calle">
+				        <input type="text" name="calle" class="form-control calle" required>
 				    </div>
 
 				    <div class="col-xs-6">
 				        <label for="NuInterior">No. Interior</label>
-				        <input type="text" name="NuInterior" class="form-control NuInterior" placeholder="Numero Interior">
+				        <input type="text" name="NuInterior" class="form-control NuInterior" placeholder="Numero Interior" required>
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="NuExterior">No. Exterior</label>
-				        <input type="text" name="NuExterior" class="form-control NuExterior" placeholder="Numero Exterior">
+				        <input type="text" name="NuExterior" class="form-control NuExterior" placeholder="Numero Exterior" required>
 				    </div>
 
 				    <div class="col-xs-6">
 				        <label for="passwordR">Contraseña</label>
-				        <input type="text" name="password" class="form-control passwordR">
+				        <input type="text" name="password" class="form-control passwordR" placeholder="Ingresar Si Desea Cambiar Contraseña">
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="passwordC">Confirmar Contraseña</label>
-				        <input type="text" name="passwordC" class="form-control passwordC">
+				        <input type="text" name="passwordC" class="form-control passwordC" placeholder="Contraseña Nueva">
 				    </div>
-         </div>         
+				    
+				</div>
+				<div class="col-md-3">
+					<div class="col-xs-12">
+					<button type="submit" class="btn btn-link btnEditarUser">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Guardar Cambios
+					</button>
+					</div>
+					<div class="col-xs-12">
+					<button type="button" class="btn btn-link btnEliminarUser">
+					  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Eliminar Cuenta
+					</button>
+					</div>
+				</div>
+			</form>
+         </div>       
 	  </div>
 
 	<?php include 'footer.php'; ?>
 	<?php require_once('Login.php'); ?>
 	<?php require_once('Registro.php'); ?>
 	<script src="js/registroUsuarioAjax.js"></script>
+	<script src="js/consultaUser.js"></script>
 
 </body>
 </html>

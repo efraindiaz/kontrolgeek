@@ -22,13 +22,10 @@ foreach ($rows as $row){
         $_SESSION['loggedin'] = true;
         $_SESSION['idusuario'] = $row['id'];
         $_SESSION['nombre'] = $row['nombre'];
-
-        echo "Bienvenido! " . $_SESSION['nombre'];
-        header('Location: ../');
-	}
-	else{
-        print "Usuario o contraseña incorrectos";
-    } 
+        echo 1;
+	}else{
+        echo 0;
+    }
 }
 $conn = null;
 ?>

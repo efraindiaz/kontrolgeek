@@ -1,4 +1,5 @@
 <?php
+session_start();
 		require_once('conexion.php');
 
 		$conn = dbConexion();
@@ -19,15 +20,22 @@
 			$Email = $_REQUEST["email"];
 			$Telefono = $_REQUEST["telefono"];
 			$Pass = $_REQUEST["password"];
+			$PassC = $_REQUEST["passwordC"];
 
-			$stmt->execute();
+			if ($Pass == $PassC) {
+					echo 1; //si las contraseñas coinciden
+					$stmt->execute(); // y ejecuta la consulta usuario
 
-			$queryLast = "SELECT id FROM usuario ORDER BY id DESC LIMIT 1;";
+			$queryLast = "SELECT * FROM usuario ORDER BY id DESC LIMIT 1;";
 			$result = $conn->query($queryLast);
 			$rows = $result->fetchAll();
 
 			foreach ($rows as $row){
-				$id = $row['id']; }
+				$id = $row['id'];
+				$_SESSION['loggedin'] = true;
+	        	 $_SESSION['idusuario'] = $row['id'];
+	        	 $_SESSION['nombre'] = $row['nombre'];
+	        	}
 
 			$registro = $conn->prepare("INSERT INTO direccion_usuario (id_usuario,ciudad,estado,codigo_postal,colonia,calle,Nu_interior,Nu_exterior) VALUES (:id_usuario, :ciudad, :estado, :codigo_postal, :colonia, :calle, :Nu_interior, :Nu_exterior)");
 
@@ -48,6 +56,10 @@
 			$Nuinterior = $_REQUEST["NuInterior"];
 			$Nuexterior = $_REQUEST["NuExterior"];
 
-			$registro->execute();
+			$registro->execute(); // y ejecuta la consulta direccion
+			}else{
+				echo 0; //si las contrseñas no coinciden
+			}
 			$conn = null;
+
 ?>
