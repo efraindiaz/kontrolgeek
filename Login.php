@@ -17,6 +17,9 @@
 			        <label for="pass">Contraseña</label>
 			        <input type="password" name="pass" class="form-control password" placeholder="Contraseña">
 			    </div>
+			    <div class="form-group">
+			    	<a class="btnRegistrate">¿Aún no tienes una cuenta?</a>
+			    </div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>

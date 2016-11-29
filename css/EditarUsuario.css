@@ -4,9 +4,20 @@
 }
 
 .rowInfoUsuario div{
-	margin-bottom: 2%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+.col-md-9{
+	background-color: #E6E6E6;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
 }
 
+.col-md-3 .col-xs-12{
+	background-color: #E6E6E6;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
 .acciones{
 	background-color: #542682;
 }

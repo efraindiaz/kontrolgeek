@@ -19,3 +19,8 @@ $('.formLogin').submit(function(event){
 			}
 		});
 });
+
+$('.btnRegistrate').click(function(){	
+	$('.modalLogin').modal('hide');
+	$('.modalRegistro').modal('show');
+});

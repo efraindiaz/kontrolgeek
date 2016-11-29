@@ -27,7 +27,7 @@
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="email">Email *</label>
-				        <input type="text" name="email" class="form-control email" placeholder="Correo Electronico" required>
+				        <input type="email" name="email" class="form-control email" placeholder="Correo Electronico" required>
 				    </div>
 			    </div>
 			    <div class="row">

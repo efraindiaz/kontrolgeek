@@ -36,7 +36,7 @@
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="email">Email</label>
-				        <input type="text" name="email" class="form-control email" placeholder="Correo Electronico" required>
+				        <input type="email" name="email" class="form-control email" placeholder="Correo Electronico" required>
 				    </div>
 
 				    <div class="col-xs-6">
@@ -77,11 +77,11 @@
 
 				    <div class="col-xs-6">
 				        <label for="passwordR">Contraseña</label>
-				        <input type="text" name="password" class="form-control passwordR" placeholder="Ingresar Si Desea Cambiar Contraseña">
+				        <input type="password" name="password" class="form-control passwordR" placeholder="Ingresar Si Desea Cambiar Contraseña">
 				    </div>
 				    <div class="col-xs-6">
 				        <label for="passwordC">Confirmar Contraseña</label>
-				        <input type="text" name="passwordC" class="form-control passwordC" placeholder="Contraseña Nueva">
+				        <input type="password" name="passwordC" class="form-control passwordC" placeholder="Contraseña Nueva">
 				    </div>
 				    
 				</div>
@@ -92,9 +92,9 @@
 					</button>
 					</div>
 					<div class="col-xs-12">
-					<button type="button" class="btn btn-link btnEliminarUser">
+					<a href="db/EliminarUsuario.php"><button type="button" class="btn btn-link btnEliminarUser">
 					  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Eliminar Cuenta
-					</button>
+					</button></a>
 					</div>
 				</div>
 			</form>
